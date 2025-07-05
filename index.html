@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduBoard - Student Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="LM.css">
+</head>
+
+<body>
+    <div class="dashboard">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar" id="sidebar">
+            <ul>
+                <li><a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="#"><i class="fas fa-book"></i> Subjects</a></li>
+                <li><a href="#"><i class="fas fa-calendar-check"></i> Attendance</a></li>
+                <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+                <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header Section -->
+            <header class="header">
+                <div class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="profile">
+                    <img src="https://i.ibb.co/q3BjQLht/3b5e0900-273f-461d-8eba-c73b7cfb2d24.jpg" alt="Profile Picture">
+                    <span id="studentName">John Doe</span>
+                </div>
+                <div class="notifications">
+                    <i class="fas fa-bell" id="notificationIcon"></i>
+                    <div class="notification-count" id="notificationCount">0</div>
+                </div>
+            </header>
+
+            <!-- Student Overview Cards -->
+            <section class="overview-cards">
+                <div class="card">
+                    <h3>GPA</h3>
+                    <p id="gpa">3.75</p>
+                </div>
+                <div class="card">
+                    <h3>Attendance</h3>
+                    <p id="attendance">92%</p>
+                </div>
+                <div class="card">
+                    <h3>Assignments Due</h3>
+                    <p id="assignmentsDue">3</p>
+                </div>
+                <div class="card">
+                    <h3>Total Credits</h3>
+                    <p id="totalCredits">45</p>
+                </div>
+            </section>
+
+            <!-- Progress Table -->
+            <section class="progress-table">
+                <h2>Subject Progress</h2>
+                <table id="subjectProgressTable">
+                    <thead>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Progress</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Data will be inserted here by JavaScript -->
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Upcoming Deadlines Section -->
+            <section class="upcoming-deadlines">
+                <h2>Upcoming Deadlines</h2>
+                <ul id="upcomingDeadlines">
+                    <!-- Data will be inserted here by JavaScript -->
+                </ul>
+            </section>
+
+            <!-- Student Profile Info -->
+            <section class="profile-info">
+                <h2>Profile Information</h2>
+                <div class="profile-card">
+                    <img src="https://i.ibb.co/q3BjQLht/3b5e0900-273f-461d-8eba-c73b7cfb2d24.jpg" alt="Profile Picture">
+                    <h3 id="profileName">John Doe</h3>
+                    <p><strong>Roll No:</strong> <span id="rollNo">12345</span></p>
+                    <p><strong>Email:</strong> <span id="email">john.doe@example.com</span></p>
+                    <p><strong>College:</strong> <span id="college">XYZ College</span></p>
+                    <p><strong>Department:</strong> <span id="department">Computer Science</span></p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="LM.js"></script>
+</body>
+
+</html>
